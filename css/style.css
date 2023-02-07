@@ -56,9 +56,15 @@ a {
 }
 
 /*Именной*/
+.name__wrapper {
+   display: flex;
+   align-items: center;
+   min-height: 730px;
+}
+
 .name__text {
    column-gap: 30px;
-   padding-left: 61px;
+   padding-left: 81px;
    display: flex;
    flex-direction: column;
    width: 50%;
@@ -96,4 +102,30 @@ a {
    background-repeat: no-repeat;
    background-size: cover;
    background-position: 40% 0;
+   /* opacity: .5; */
+   background: -moz-linear-gradient(to right, rgba(30, 75, 115, 1), rgba(255, 255, 255, 0)), -webkit-gradient(to right, rgba(30, 75, 115, 1), rgba(255, 255, 255, 0)), -ms-linear-gradient(to right, rgba(30, 75, 115, 1), rgba(255, 255, 255, 0)), linear-gradient(to right, rgba(30, 75, 115, 1), rgba(255, 255, 255, 0));
 }
+
+@media (max-width:1150px) {
+   .name {
+      background-position: 50% 0;
+   }
+}
+
+@media (max-width:1000px) {
+   .name {
+      background-position: 60% 0;
+   }
+}
+
+@media (max-width:940px) {
+   .header__contacts {
+      column-gap: 40px;
+   }
+
+   .menu {
+      column-gap: 35px;
+   }
+}
+
+@media (max-width:850px) {}

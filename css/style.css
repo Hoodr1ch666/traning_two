@@ -43,10 +43,13 @@ a {
    background: #0067FF;
    border-radius: 50px;
 }
-
+.menu__icon{
+   padding-left: 100px;
+}
 .navigation {
    display: flex;
    justify-content: space-between;
+   padding-right: 30px;
 }
 
 .menu {
@@ -106,6 +109,163 @@ a {
    background: -moz-linear-gradient(to right, rgba(30, 75, 115, 1), rgba(255, 255, 255, 0)), -webkit-gradient(to right, rgba(30, 75, 115, 1), rgba(255, 255, 255, 0)), -ms-linear-gradient(to right, rgba(30, 75, 115, 1), rgba(255, 255, 255, 0)), linear-gradient(to right, rgba(30, 75, 115, 1), rgba(255, 255, 255, 0));
 }
 
+/*мед сервис*/
+.med__title {
+   font-weight: 400;
+   font-size: 55px;
+   line-height: 140%;
+   color: #000000;
+}
+
+.med__service {
+   background: #F7F8FC;
+}
+
+.wrapper__med {
+   padding-top: 150px;
+   display: flex;
+}
+
+.med__text {
+   align-self: center;
+   width: 45%;
+}
+
+.med__service-columns {
+   display: flex;
+   width: 50%;
+}
+
+
+.med__service-column-two {
+   margin-top: 31px;
+}
+
+.med__cart-one {
+   justify-content: space-between;
+   margin-right: 24px;
+   background: #fff;
+   min-height: 284px;
+   text-align: center;
+   margin-bottom: 19px;
+}
+
+.med__cart-two {
+   justify-content: space-between;
+   margin-right: 24px;
+   background: #fff;
+   min-height: 284px;
+   text-align: center;
+}
+
+.med__cart-four {
+   justify-content: space-between;
+   background: #fff;
+   min-height: 284px;
+   text-align: center;
+}
+
+.med__cart-three {
+   justify-content: space-between;
+   margin-bottom: 19px;
+   min-height: 284px;
+   text-align: center;
+   color: #fff;
+   background: #0067FF;
+   text-decoration: none;
+}
+
+.med__links {
+   text-align: center;
+}
+
+.link__med {
+   text-decoration: none;
+   color: #fff;
+}
+
+.med__link-one {
+   margin-bottom: 40px;
+   position: relative;
+}
+
+.med__link-four {
+   margin-bottom: 40px;
+   position: relative;
+}
+
+.med__link-two {
+   margin-bottom: 40px;
+   position: relative;
+}
+
+.med__link-three {
+   position: relative;
+   margin-bottom: 40px;
+}
+
+.med__images {
+   margin-top: 39px;
+   margin-bottom: 21px;
+}
+
+.cart__title-one {
+   margin-bottom: 14px;
+}
+
+.cart__title-two {
+   margin-bottom: 14px;
+}
+
+.cart__title-three {
+   margin-bottom: 14px;
+}
+
+.cart__title-four {
+   margin-bottom: 14px;
+}
+
+.cart__text-one {
+   margin-bottom: 22px;
+}
+
+.cart__text-two {
+   margin-bottom: 22px;
+}
+
+.cart__text-three {
+   margin-bottom: 22px;
+}
+
+.cart__text-four {
+   margin-bottom: 22px;
+}
+
+.link__med-one {
+   color: #444;
+   border-bottom: 1px solid #F3874A;
+   position: relative;
+}
+
+.link__med-two {
+   color: #444;
+   border-bottom: 1px solid #0067FF;
+   position: relative;
+}
+
+.link__med-three {
+   position: relative;
+   color: #fff;
+}
+
+.link__med-four {
+   color: #444;
+   border-bottom: 1px solid #F3874A;
+   position: relative;
+}
+
+
+
 @media (max-width:1150px) {
    .name {
       background-position: 50% 0;
@@ -119,6 +279,9 @@ a {
 }
 
 @media (max-width:940px) {
+   .menu__icon{
+      padding-left: 20px;
+   }
    .header__contacts {
       column-gap: 40px;
    }
@@ -128,4 +291,86 @@ a {
    }
 }
 
-@media (max-width:850px) {}
+@media (max-width:850px) {
+   .container {
+      padding: 20px;
+   }
+
+
+   .menu {
+      display: none;
+   }
+
+   .header__contacts {
+      width: 70%;
+      align-items: center;
+      flex-direction: column;
+      margin-bottom: 40px;
+   }
+
+   .wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+   }
+
+   .logo {
+      text-align: center;
+   }
+
+   .header__contacts {
+      width: 100%;
+   }
+
+   .menu__icon {
+      text-align: center;
+   }
+
+   .name__title {
+      font-size: 25px;
+   }
+
+   .name__sub-title {
+      font-size: 14px;
+   }
+
+   .name__link {
+      padding: 14px 31px;
+   }
+
+   .name {
+      background-position: 70% 0;
+   }
+
+   .name__text {
+      padding-top: 50px;
+      padding-left: 30px;
+   }
+   .wrapper__med {
+      flex-direction: column;
+      align-items: center;
+   }
+
+   .med__service-column-one {
+      width: 50%;
+   }
+
+   .med__service-column-two {
+      margin-top: 0;
+      width: 50%;
+   }
+
+   .med__service-columns {
+      margin-top: 30px;
+   }
+
+   .med__service-columns {
+      padding: 20px;
+      width: 100%;
+   }
+
+   .med__text {
+      width: 100%;
+   }
+}

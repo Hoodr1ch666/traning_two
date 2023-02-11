@@ -17,6 +17,9 @@
    <header class="header">
       <div class="container">
          <div class="wrapper">
+            <button class="header__burger" id="burger">
+               <span></span><span></span><span></span>
+            </button>
             <div class="logo">
                <img src="/img/logo_img.png" alt="">
             </div>
@@ -42,19 +45,43 @@
          </div>
          <nav class="navigation">
             <ul class="menu">
-               <li><a class="menu__burger" href="#">HOME</a></li>
-               <li><a class="menu__burger" href="#"> ABOUT US</a></li>
-               <li><a class="menu__burger" href="#">SERVICES</a></li>
-               <li><a class="menu__burger" href="#"> APPOINTMENT</a></li>
-               <li><a class="menu__burger" href="#"> PAGES</a></li>
-               <li><a class="menu__burger" href="#"> BLOG</a></li>
-               <li><a class="menu__burger" href="#"> CONTACT</a></li>
+               <li class="header__menu-list"><a class="menu__link-header" href="#">HOME</a></li>
+               <li class="header__menu-list"><a class="menu__link-header" href="#"> ABOUT US</a></li>
+               <li class="header__menu-list"><a class="menu__link-header" href="#">SERVICES</a></li>
+               <li class="header__menu-list"><a class="menu__link-header" href="#"> APPOINTMENT</a></li>
+               <li class="header__menu-list">
+                  <a class="menu__link-header" href="#"> PAGES</a>
+                  <span class="menu__arrow">
+                     <img src="/img/menu-list.svg" alt="">
+                  </span>
+                  <ul class="sub__menu-list">
+                     <li>
+                        <a class="sub__menu-link" href="">PAGES</a>
+                        <a class="sub__menu-link" href="">PAGES</a>
+                        <a class="sub__menu-link" href="">PAGES</a>
+                     </li>
+                  </ul>
+               </li>
+               <li class="header__menu-list">
+                  <a class="menu__link-header" href="#">BLOG</a>
+                  <span class="menu__arrow">
+                     <img src="/img/menu-list.svg" alt="">
+                  </span>
+                  <ul class="sub__menu-list">
+                     <li>
+                        <a class="sub__menu-link" href="">BLOG</a>
+                        <a class="sub__menu-link" href="">BLOG</a>
+                        <a class="sub__menu-link" href="">BLOG</a>
+                     </li>
+                  </ul>
+               </li>
+               <li class="header__menu-list"><a class="menu__link-header" href="#"> CONTACT</a></li>
             </ul>
             <div class="menu__icon">
-               <img src="/img/menu-icon.svg" alt="">
-               <img src="/img/menu-icon1.svg" alt="">
-               <img src="/img/menu-icon2.svg" alt="">
-               <img src="/img/menu-icon3.svg" alt="">
+               <a href=""><img src="/img/menu-icon.svg" alt=""></a> 
+               <a href=""><img src="/img/menu-icon1.svg" alt=""></a> 
+               <a href=""><img src="/img/menu-icon2.svg" alt=""></a> 
+               <a href=""><img src="/img/menu-icon3.svg" alt=""></a> 
             </div>
          </nav>
       </div>
@@ -172,10 +199,12 @@
                         </div>
                      </div>
                   </div>
-                  <div class="about__end">
-                     <P class="about__end-text">24 Hours Emergency Assistance Call Us</P>
-                     <P class="about__end-text">We are committed to providing healthcare service</P>
-                     <P class="about__end-text">Really know the true needs and expectations of patients</P>
+                  <div class="about__list">
+                     <ul class="about__end">
+                        <li class="about__end-text">24 Hours Emergency Assistance Call Us</li>
+                        <li class="about__end-text">We are committed to providing healthcare service</li>
+                        <li class="about__end-text">Really know the true needs and expectations of patients</li>
+                     </ul>
                   </div>
                   <div class="link__about">
                      <a class="about__link" href="">Contact Us</a>
@@ -263,7 +292,90 @@
             </div>
          </div>
       </section>
+      <section class="last">
+         <div class="container">
+            <div class="wrapper__last">
+               <div class="last__titles">
+                  <p class="last__paragraph">Testimonials</p>
+                  <h2 class="last__title">What Patients Say About Us</h2>
+               </div>
+               <div class="last__columns">
+                  <div class="last__column">
+                     <img class="last__img" src="/img/last-photo.png" alt="">
+                     <p class="last__column-sub">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+                        laoret purus sed mattis placerat. Ut at ante molestie. consectetu adipiscing elit." </p>
+                     <h3 class="last__column-title">Smithi John</h3>
+                     <p class="last__text">Buisnessmen</p>
+                  </div>
+                  <div class="last__column">
+                     <img class="last__img" src="/img/last-photo1.png" alt="">
+                     <p class="last__column-sub">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+                        laoret purus sed mattis placerat. Ut at ante molestie. consectetu adipiscing elit." </p>
+                     <h3 class="last__column-title">Bisto John</h3>
+                     <p class="last__text">Buisnessmen</p>
+                  </div>
+                  <div class="last__column">
+                     <img class="last__img" src="/img/last-photo2.png" alt="">
+                     <p class="last__column-sub">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+                        laoret purus sed mattis placerat. Ut at ante molestie. consectetu adipiscing elit." </p>
+                     <h3 class="last__column-title">Dani John</h3>
+                     <p class="last__text">Buisnessmen</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
    </main>
+   <footer class="footer">
+      <div class="container">
+         <div class="wrapper__footer">
+            <div class="footer__text">
+               <div class="footer__logo">
+                  <img src="/img/footer-logo.svg" alt="">
+                  <p class="footer__title">Medicate</p>
+               </div>
+               <p class="footer__sub-title">We are the most powerful and leading software agency in the world</p>
+               <div class="footer__icon">
+                  <a href="#"><img src="/img/footer-icon.svg" alt=""></a> 
+                  <a href="#"><img src="/img/footer-icon1.svg" alt=""></a> 
+                  <a href="#"><img src="/img/footer-icon2.svg" alt=""></a> 
+                  <a href="#"><img src="/img/footer-icon3.svg" alt=""></a> 
+               </div>
+            </div>
+            <ul class="footer__lists">
+               <h3 class="footer__title-list"><a class="footer__link" href="#">Links</a></h3>
+               <li class="footer__list"><a class="footer__link" href="#">Home</a></li>
+               <li class="footer__list"><a class="footer__link" href="#">Services</a></li>
+               <li class="footer__list"><a class="footer__link" href="#">Invest</a></li>
+               <li class="footer__list"><a class="footer__link" href="#">Tutorial</a></li>
+               <li class="footer__list"><a class="footer__link" href="#">Contact</a></li>
+            </ul>
+            <ul class="footer__lists">
+               <h3 class="footer__title-list"><a class="footer__link" href="#">About</a></h3>
+               <li class="footer__list"><a class="footer__link" href="#">Partners</a></li>
+               <li class="footer__list"><a class="footer__link" href="#">Careers</a></li>
+               <li class="footer__list"><a class="footer__link" href="#">Press</a></li>
+               <li class="footer__list"><a class="footer__link" href="#">Community</a></li>
+            </ul>
+            <ul class="footer__lists">
+               <h3 class="footer__title-list"><a class="footer__link" href="#">Resorces</a></h3>
+               <li class="footer__list"><a class="footer__link" href="#">Help</a></li>
+               <li class="footer__list"><a class="footer__link" href="#">Support</a></li>
+               <li class="footer__list"><a class="footer__link" href="#">Stories</a></li>
+               <li class="footer__list"><a class="footer__link" href="#">Reviews</a></li>
+               <li class="footer__list"><a class="footer__link" href="#">Resources</a></li>
+            </ul>
+            <div class="footer__adres">
+               <h3 class="footer__adres-title">Our Office</h3>
+               <p class="footer__adres-text">Indonesia<br>
+                  Jl. Griya Permata Hijau no D1<br> Purwomartani Kalasan 543881</p>
+            </div>
+         </div>
+      </div>
+   </footer>
+
+   <script src="/js/Jquery.min.js"></script>
+   <script src="js/script.js"></script>
 </body>
 
 </html>
